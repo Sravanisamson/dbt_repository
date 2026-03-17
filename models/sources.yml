@@ -1,0 +1,14 @@
+sources:
+  - name: s1
+    database: icici_db
+    schema: banking_Schema
+    tables:
+      - name: customers
+      - name: orders      
+      - name: payment   
+      - name: t_ticket_track
+      - name: t_customers
+      - name: t_nations
+      - name: t_discount
+
+
