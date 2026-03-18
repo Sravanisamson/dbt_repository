@@ -2,6 +2,9 @@
 case 
 when {{ country_column }}='INDIA' then {{ price_column }}*0.9
 when {{ country_column }}='CANADA' then {{ price_column }}*0.8
-    {% endmacro %}
+    else {{ price_column }}
+    end
+{% endmacro %}
 
-    
+
+   
