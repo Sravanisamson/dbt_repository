@@ -1,0 +1,1 @@
+select *  from icici_db.banking_schema.customers where customer_id=1
