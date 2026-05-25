@@ -3,9 +3,13 @@ models:
     columns:
       - name: CUSTOMER_ID
         tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                store_failures: true
 
+          - not_null:
+              config:
+                store_failures: true
   - name: t_new_orders
     columns:
       - name: order_id
